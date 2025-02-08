@@ -1,0 +1,8 @@
+
+langchain_openai
+langchain_ollama
+browser-use
+python-dotenv
+playwright
+datetime
+playwright
