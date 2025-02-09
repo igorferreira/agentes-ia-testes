@@ -5,7 +5,10 @@ Este repositório contém projetos explorando implementações de agentes de IA 
 ## Bibliotecas Utilizadas
 
 - **browser_use**: Biblioteca para automação e controle de navegador web através de agentes de IA
+    Para mais informações sobre o Browser Use, visite [Browser Use no GitHub](https://github.com/browser-use/browser-use
 - **crew_ai**: Framework para construção e gerenciamento de equipes de agentes de IA
+    Para mais informações sobre o Crew AI, visite [crewAI no GitHub](https://github.com/crewAIInc/crewAI)
+
 
 ## Projetos
 
