@@ -11,16 +11,17 @@ setup:
 	$(PIP) install --upgrade pip
 
 # Instalar todas as dependências do requirements.txt
-install: setup
-	$(PIP) install -r requirements.txt
+install: 
+	pip install -r requirements.txt
+	playwright install
 
 # Executar todos os testes unitários
 test:
-	$(PYTHON) -m pytest tests/
+	python -m pytest tests/
 
 # Iniciar a aplicação
-run:
-	$(PYTHON) src/main.py
+run-find-best-price:
+	python find_best_price.py
 
 # Iniciar a aplicação em modo de desenvolvimento
 # export BROWSER=/usr/bin/google-chrome && 
