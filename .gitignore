@@ -139,3 +139,4 @@ logs/*
 
 .history/
 .lh
+browser-use/cookies.json
