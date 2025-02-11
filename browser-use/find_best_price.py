@@ -1,34 +1,47 @@
+import os
 import asyncio
 import logging
-from langchain_openai import ChatOpenAI
-from langchain_ollama import ChatOllama
-from browser_use import Agent
-from dotenv import load_dotenv
-from browser_use import Agent, Browser, BrowserConfig
 from datetime import datetime, timedelta
 from pathlib import Path
+from pydantic import SecretStr
+from dotenv import load_dotenv
+from langchain_openai import ChatOpenAI
+from langchain_ollama import ChatOllama
+from langchain_google_genai import ChatGoogleGenerativeAI
+from browser_use import Agent
+from browser_use import Agent, Browser, BrowserConfig
+from browser_use.browser.context import BrowserContextConfig, BrowserContext
 
 # Load environment variables
 load_dotenv()
 
-# Configure the browser to connect to your Chrome instance
-browser = Browser(
-    config=BrowserConfig(
-        # Specify the path to your Chrome executable
-        #chrome_instance_path='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',  # macOS path
-        # For Windows, typically: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
-        # For Linux, typically: 
-        #chrome_instance_path= '/usr/bin/google-chrome'
-        #save_recording_path="./recordings/"            
-    )
+browser_context_config = BrowserContextConfig(
+    cookies_file="cookies.json",
+    wait_for_network_idle_page_load_time=10.0,
+    browser_window_size={'width': 1920, 'height': 540},  # Full width, half height
+    locale='pt-BR',
+    user_agent='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+    highlight_elements=True,
+    viewport_expansion=500,
+    allowed_domains=[],
+    save_recording_path='./recordings',
+    save_downloads_path='./downloads',
+    trace_path='./traces',
+    disable_security=False    
 )
+
+browser_config = BrowserConfig(
+                    headless=False,
+                    disable_security=False,
+                    chrome_instance_path='/usr/bin/google-chrome'
+)
+
 
 # Initialize the model
 # gpt-4o is the largest model available
-llmOpenAI = ChatOpenAI(model="gpt-4o",temperature=0.0)
-llmOllama=ChatOllama(model="deepseek-r1", num_ctx=32000)
-
-llmChoice = llmOpenAI
+#llm = ChatOpenAI(model="gpt-4o",temperature=0.0)
+#llm = ChatOllama(model="deepseek-r1", num_ctx=32000)
+llm = ChatGoogleGenerativeAI(model='gemini-2.0-flash-exp', api_key=SecretStr(os.getenv("GEMINI_API_KEY")))
 
 def setup_logger(log_file='logs/find_best_price.log'):
     log_dir = Path(log_file).parent
@@ -45,16 +58,31 @@ def setup_logger(log_file='logs/find_best_price.log'):
                             logging.FileHandler(log_file),
                             console_handler
     ])
+    return logging
+
+logger = setup_logger()
 
 async def run_task(tasks, file):
-        
+
+    initial_actions_form_agent = [	
+        {'open_tab': {'url': 'http://www.google.com'}},
+    ]
+
     try:
+
+        # Configure the browser to connect to your Chrome instance
+        browser = Browser(
+            config=browser_config
+        )
+        context = BrowserContext(browser=browser, config=browser_context_config)
+        
         agent = Agent(
-            task=tasks, 
-            llm=llmChoice, 
-            save_conversation_path= "./conversations/"+file, 
+            initial_actions=initial_actions_form_agent,
+            browser_context=context,
+            task=tasks,
+            llm=llm,
             generate_gif="./execucoes/" + file + ".gif" 
-        ) 
+        )
         history = await agent.run()    
         result = history.final_result()
         print(result)
@@ -78,11 +106,11 @@ async def execute_tests():
         Tudo sempre em português.
     """
     
-    logging.info("Starting test execution")
+    logger.info("Starting test execution")
     
     try:
         
-        logging.info("Buscando o preco mais barato do Xifaxan 550mg 28 comprimidos") 
+        logger.info("Buscando o preco mais barato do Xifaxan 550mg 28 comprimidos") 
         await run_task("""
                 Acessar os sites das farmácias e buscar o preço do Xifaxan 550mg 28 comprimidos.
                 Lista de farmácias: Drogasil, Drogaria São Paulo, Pague Menos, Ultrafarma, Onofre, Droga Raia, Panvel, Drogaria Araujo, Drogaria Venancio, Drogaria Pacheco.
@@ -98,10 +126,10 @@ async def execute_tests():
     
 
     except Exception as e:
-        logging.error(f"Test execution failed: {str(e)}")
+        logger.error(f"Test execution failed: {str(e)}")
         raise
     finally:
-        logging.info("Test execution completed")
+        logger.info("Test execution completed")
     
 if __name__ == '__main__':
     setup_logger()
