@@ -44,7 +44,8 @@ cp .env.example .env
 
 OPENAI_API_KEY=sua_chave_api
 
-📁 Estrutura do Projeto
+## 📁 Estrutura do Projeto
+```
 .
 ├── README.md
 ├── browser-use/
@@ -55,6 +56,7 @@ OPENAI_API_KEY=sua_chave_api
 ├── logs/                      # Logs de execução
 ├── recordings/                # Gravações das sessões
 └── results/                   # Resultados das buscas
+```
 
 💡 Funcionalidades
 Busca de Preços: Automatiza a busca de medicamentos em diferentes farmácias
