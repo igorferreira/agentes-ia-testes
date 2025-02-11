@@ -140,3 +140,4 @@ logs/*
 .history/
 .lh
 browser-use/cookies.json
+browser-use/conversations/tasks_preenchimento_todos_campos_validos_*
