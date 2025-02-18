@@ -1,0 +1,27 @@
+** Nesse arquivo tem os textos par compartilhar via Whatsapp **
+
+*Suite de ferramentas para IA:*
+
+Goblin Tools
+Suite de ferramentas para criação e edição de conteúdo visual com IA
+🔗 goblin.tools
+
+Taskade
+Plataforma colaborativa de gestão de projetos com recursos de IA
+🔗 taskade.com
+
+Gamma
+Criação de apresentações profissionais com IA
+🔗 gamma.work/pt/ai-power-point
+
+Fliki
+Ferramenta de conversão de texto para vídeo usando vozes IA
+🔗 app.fliki.ai
+
+Bardeen
+Extensão Chrome para automação de navegador
+🔗 chromewebstore.google.com/detail/bardeen-automate-browser/ihhkmalpkhkoedlmcnilbbhhbhnicjga
+
+IdeaMap
+Ferramenta de mapeamento mental e brainstorming com IA
+🔗 ideamap.ai/home

@@ -28,3 +28,12 @@ O projeto mantém os seguintes diretórios para organização:
 - `logs/`: Arquivos de log do sistema
 - `recordings/`: Gravações de sessões
 - `results/`: Resultados das execuções
+
+## Ferramentas de IA de terceiros
+
+- [Goblin Tools](https://goblin.tools/) - Suite de ferramentas para criação e edição de conteúdo visual com IA
+- [Taskade](https://www.taskade.com/) - Plataforma colaborativa de gestão de projetos com recursos de IA
+- [Gamma](https://gamma.work/pt/ai-power-point) - Criação de apresentações profissionais com IA
+- [Fliki](https://app.fliki.ai/) - Ferramenta de conversão de texto para vídeo usando vozes IA
+- [Bardeen](https://chromewebstore.google.com/detail/bardeen-automate-browser/ihhkmalpkhkoedlmcnilbbhhbhnicjga) - Extensão Chrome para automação de navegador
+- [IdeaMap](https://ideamap.ai/home) - Ferramenta de mapeamento mental e brainstorming com IA

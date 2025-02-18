@@ -1,0 +1,163 @@
+Modelos
+
+Qwen/Qwen2.5-Coder-32B-Instruct · Hugging Face
+meta-llama/Llama-3.2-11B-Vision-Instruct · Hugging Face
+meta-llama (Meta Llama)
+google/gemma-2-2b-it · Hugging Face
+google (Google)
+mistralai (Mistral AI_)
+deepseek-ai/DeepSeek-R1-Zero · Hugging Face
+
+Suite de Ferramentas para IA
+
+1. There's An AI For That
+📌 Diretório de ferramentas e serviços de IA
+🔗 theresanaiforthat.com
+
+2. ChatGPT
+📌 Modelo de linguagem conversacional da OpenAI
+🔗 chat.openai.com
+
+3. Gemini
+📌 Modelo de IA do Google com recursos multimodais
+🔗 gemini.google.com
+
+4. Microsoft Copilot
+📌 Assistente de IA integrado aos produtos Microsoft
+🔗 copilot.microsoft.com
+
+5. Poe
+📌 Plataforma de acesso a diversos modelos de IA
+🔗 poe.com
+
+6. Hugging Face
+📌 Plataforma de desenvolvimento e compartilhamento de modelos de IA
+🔗 huggingface.co
+
+7. Perplexity
+📌 Motor de busca alimentado por IA
+🔗 perplexity.ai
+
+8. Meta AI
+📌 Portal de IA da Meta com diversos modelos e ferramentas
+🔗 ai.meta.com
+
+9. Ollama
+📌 Ferramenta para rodar modelos de IA localmente
+🔗 ollama.ai
+
+10. RenderNet
+📌 Plataforma de geração de imagens com IA
+🔗 rendernet.ai
+
+11. Qwen
+📌 Modelo de linguagem da Alibaba Cloud
+🔗 qwen
+
+12. DeepSeek
+📌 IA avançada para buscas e análise de dados
+🔗 deepseek
+
+13. Kimi
+📌 Assistente de IA interativa para produtividade
+🔗 kimi
+
+14. Compare AI Answers
+📌 Ferramenta para comparar respostas de diferentes modelos de IA
+🔗 compareaianswers
+
+15. vLLM
+📌 Plataforma para execução eficiente de modelos de linguagem
+🔗 vLLM
+
+16. GPT4All
+📌 Execução de modelos de IA localmente
+🔗 gpt4all
+
+17. Copilot Lab
+📌 Ferramenta para experimentação com IA para código
+🔗 copilotlab
+
+18. Dora - NoCode Design Platform
+📌 Plataforma de design NoCode impulsionada por IA
+🔗 dora
+
+19. Studio
+📌 Ferramenta para criação de aplicações com IA
+🔗 studio
+
+20. MJV Iron
+📌 Plataforma de inovação com IA aplicada
+🔗 mjviron
+
+21. Vaadin App Generator
+📌 Criador de aplicações Vaadin com IA
+🔗 vaadin
+
+22. Google AI Studio - Prompt Gallery
+📌 Repositório de prompts para experimentação de IA do Google
+🔗 google AI Studio
+
+23. Owlbot AI
+📌 Assistente de IA para automação e produtividade
+🔗 owlbot
+
+24. Yaseen AI
+📌 Ferramenta de IA para análise de dados e previsões
+🔗 yaseenai
+
+25. Estabilidade IA
+📌 Plataforma para criação de modelos generativos
+🔗 estabilidadeai
+
+26. Notebook Llama | Llama API
+📌 Interface para execução da Llama API
+🔗 llamaAPI
+
+27. NotebookLM
+📌 Bloco de notas com integração IA do Google
+🔗 notebookLM
+
+28. Open WebUI
+📌 Interface aberta para interação com modelos de IA
+🔗 openwebui
+
+29. Otio - RAG
+📌 Ferramenta para recuperação aumentada com IA
+🔗 otio
+
+30. Thoughtworks Technology Radar
+📌 Webinars sobre inovações e tendências em IA
+🔗 thoughtworks
+
+31. Coze: Next-Gen AI Chatbot
+📌 Plataforma de desenvolvimento de chatbots com IA
+🔗 coze
+
+32. Dynamiq
+📌 Ferramenta para criação de modelos dinâmicos com IA
+🔗 dynamiq
+
+33. Goblin Tools
+📌 Suite de ferramentas para criação e edição de conteúdo visual com IA
+🔗 goblin.tools
+
+34. Taskade
+📌 Plataforma colaborativa de gestão de projetos com recursos de IA
+🔗 taskade.com
+
+35. Gamma
+📌 Criação de apresentações profissionais com IA
+🔗 gamma.work/pt/ai-power-point
+
+36. Fliki
+📌 Ferramenta de conversão de texto para vídeo usando vozes IA
+🔗 app.fliki.ai
+
+37. Bardeen
+📌 Extensão Chrome para automação de navegador
+🔗 chromewebstore.google.com/detail/bardeen-automate-browser/ihhkmalpkhkoedlmcnilbbhhbhnicjga
+
+38. IdeaMap
+📌 Ferramenta de mapeamento mental e brainstorming com IA
+🔗 ideamap.ai/home
